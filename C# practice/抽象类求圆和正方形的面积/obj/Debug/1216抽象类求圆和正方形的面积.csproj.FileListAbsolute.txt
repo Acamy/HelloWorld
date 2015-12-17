@@ -4,3 +4,6 @@ E:\C#2014\C# practice\抽象类求圆和正方形的面积\bin\Debug\抽象类�
 E:\C#2014\C# practice\抽象类求圆和正方形的面积\obj\Debug\1216抽象类求圆和正方形的面积.csprojResolveAssemblyReference.cache
 E:\C#2014\C# practice\抽象类求圆和正方形的面积\obj\Debug\抽象类求圆和正方形的面积.exe
 E:\C#2014\C# practice\抽象类求圆和正方形的面积\obj\Debug\抽象类求圆和正方形的面积.pdb
+D:\Git\C# practice\抽象类求圆和正方形的面积\bin\Debug\抽象类求圆和正方形的面积.exe.config
+D:\Git\C# practice\抽象类求圆和正方形的面积\obj\Debug\抽象类求圆和正方形的面积.exe
+D:\Git\C# practice\抽象类求圆和正方形的面积\obj\Debug\抽象类求圆和正方形的面积.pdb

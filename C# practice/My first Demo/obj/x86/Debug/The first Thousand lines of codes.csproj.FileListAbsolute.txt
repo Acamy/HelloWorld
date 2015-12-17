@@ -5,3 +5,5 @@ F:\C#2014\C# practice\My first Demo\obj\x86\Debug\My first Demo.exe
 F:\C#2014\C# practice\My first Demo\obj\x86\Debug\My first Demo.pdb
 E:\C#2014\C# practice\My first Demo\obj\x86\Debug\My first Demo.exe
 E:\C#2014\C# practice\My first Demo\obj\x86\Debug\My first Demo.pdb
+D:\Git\C# practice\My first Demo\obj\x86\Debug\My first Demo.exe
+D:\Git\C# practice\My first Demo\obj\x86\Debug\My first Demo.pdb
