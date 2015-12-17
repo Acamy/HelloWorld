@@ -1,0 +1,6 @@
+E:\C#2014\C# practice\1217简单工厂设计模式\bin\Debug\1217简单工厂设计模式.exe.config
+E:\C#2014\C# practice\1217简单工厂设计模式\obj\Debug\1217简单工厂设计模式.csprojResolveAssemblyReference.cache
+E:\C#2014\C# practice\1217简单工厂设计模式\bin\Debug\1217简单工厂设计模式.exe
+E:\C#2014\C# practice\1217简单工厂设计模式\bin\Debug\1217简单工厂设计模式.pdb
+E:\C#2014\C# practice\1217简单工厂设计模式\obj\Debug\1217简单工厂设计模式.exe
+E:\C#2014\C# practice\1217简单工厂设计模式\obj\Debug\1217简单工厂设计模式.pdb

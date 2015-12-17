@@ -1,0 +1,7 @@
+F:\C#2014\C# practice\My first Demo\bin\Debug\My first Demo.exe
+F:\C#2014\C# practice\My first Demo\bin\Debug\My first Demo.pdb
+F:\C#2014\C# practice\My first Demo\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\C#2014\C# practice\My first Demo\obj\x86\Debug\My first Demo.exe
+F:\C#2014\C# practice\My first Demo\obj\x86\Debug\My first Demo.pdb
+E:\C#2014\C# practice\My first Demo\obj\x86\Debug\My first Demo.exe
+E:\C#2014\C# practice\My first Demo\obj\x86\Debug\My first Demo.pdb

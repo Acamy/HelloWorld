@@ -1,0 +1,5 @@
+E:\C#2014\C# practice\Path类\bin\Debug\Path类.exe.config
+E:\C#2014\C# practice\Path类\bin\Debug\Path类.exe
+E:\C#2014\C# practice\Path类\bin\Debug\Path类.pdb
+E:\C#2014\C# practice\Path类\obj\Debug\Path类.exe
+E:\C#2014\C# practice\Path类\obj\Debug\Path类.pdb

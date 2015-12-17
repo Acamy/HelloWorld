@@ -1,0 +1,8 @@
+E:\C#2014\C# practice\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe.config
+E:\C#2014\C# practice\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe
+E:\C#2014\C# practice\ConsoleApplication2\bin\Debug\ConsoleApplication2.pdb
+E:\C#2014\C# practice\ConsoleApplication2\obj\Debug\ConsoleApplication2.csprojResolveAssemblyReference.cache
+E:\C#2014\C# practice\ConsoleApplication2\obj\Debug\ConsoleApplication2.exe
+E:\C#2014\C# practice\ConsoleApplication2\obj\Debug\ConsoleApplication2.pdb
+E:\C#2014\C# practice\ConsoleApplication2\bin\Debug\面向对象练习.exe
+E:\C#2014\C# practice\ConsoleApplication2\bin\Debug\面向对象练习.pdb

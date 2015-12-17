@@ -1,0 +1,6 @@
+E:\C#2014\C# practice\list泛型集合\bin\Debug\list泛型集合.exe.config
+E:\C#2014\C# practice\list泛型集合\bin\Debug\list泛型集合.exe
+E:\C#2014\C# practice\list泛型集合\bin\Debug\list泛型集合.pdb
+E:\C#2014\C# practice\list泛型集合\obj\Debug\list泛型集合.exe
+E:\C#2014\C# practice\list泛型集合\obj\Debug\list泛型集合.pdb
+E:\C#2014\C# practice\list泛型集合\obj\Debug\list泛型集合.csprojResolveAssemblyReference.cache

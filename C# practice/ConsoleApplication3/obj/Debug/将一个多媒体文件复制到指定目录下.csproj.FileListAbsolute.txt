@@ -1,0 +1,5 @@
+E:\C#2014\C# practice\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe.config
+E:\C#2014\C# practice\ConsoleApplication3\bin\Debug\ConsoleApplication3.exe
+E:\C#2014\C# practice\ConsoleApplication3\bin\Debug\ConsoleApplication3.pdb
+E:\C#2014\C# practice\ConsoleApplication3\obj\Debug\ConsoleApplication3.exe
+E:\C#2014\C# practice\ConsoleApplication3\obj\Debug\ConsoleApplication3.pdb

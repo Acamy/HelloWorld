@@ -1,0 +1,6 @@
+E:\C#2014\C# practice\里氏转换\bin\Debug\里氏转换.exe.config
+E:\C#2014\C# practice\里氏转换\bin\Debug\里氏转换.exe
+E:\C#2014\C# practice\里氏转换\bin\Debug\里氏转换.pdb
+E:\C#2014\C# practice\里氏转换\obj\Debug\里氏转换.exe
+E:\C#2014\C# practice\里氏转换\obj\Debug\里氏转换.pdb
+E:\C#2014\C# practice\里氏转换\obj\Debug\集合.csprojResolveAssemblyReference.cache

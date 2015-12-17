@@ -1,0 +1,5 @@
+E:\C#2014\C# practice\面向对象练习\obj\x86\Debug\面向对象练习.csprojResolveAssemblyReference.cache
+E:\C#2014\C# practice\面向对象练习\bin\Debug\面向对象练习.exe
+E:\C#2014\C# practice\面向对象练习\bin\Debug\面向对象练习.pdb
+E:\C#2014\C# practice\面向对象练习\obj\x86\Debug\面向对象练习.exe
+E:\C#2014\C# practice\面向对象练习\obj\x86\Debug\面向对象练习.pdb

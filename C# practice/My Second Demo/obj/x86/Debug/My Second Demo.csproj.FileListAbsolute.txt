@@ -1,0 +1,5 @@
+F:\C++ premer pratice\The first day\My Second Demo\bin\Debug\My Second Demo.exe
+F:\C++ premer pratice\The first day\My Second Demo\bin\Debug\My Second Demo.pdb
+F:\C++ premer pratice\The first day\My Second Demo\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\C++ premer pratice\The first day\My Second Demo\obj\x86\Debug\My Second Demo.exe
+F:\C++ premer pratice\The first day\My Second Demo\obj\x86\Debug\My Second Demo.pdb

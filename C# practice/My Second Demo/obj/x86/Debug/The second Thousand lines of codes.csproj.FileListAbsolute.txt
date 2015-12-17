@@ -1,0 +1,2 @@
+E:\C#2014\C# practice\My Second Demo\obj\x86\Debug\My Second Demo.exe
+E:\C#2014\C# practice\My Second Demo\obj\x86\Debug\My Second Demo.pdb
