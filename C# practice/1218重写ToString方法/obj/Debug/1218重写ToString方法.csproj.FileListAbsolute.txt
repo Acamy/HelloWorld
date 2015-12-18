@@ -1,0 +1,6 @@
+D:\Git\C# practice\1218重写ToString方法\bin\Debug\1218重写ToString方法.exe.config
+D:\Git\C# practice\1218重写ToString方法\bin\Debug\1218重写ToString方法.exe
+D:\Git\C# practice\1218重写ToString方法\bin\Debug\1218重写ToString方法.pdb
+D:\Git\C# practice\1218重写ToString方法\obj\Debug\1218重写ToString方法.csprojResolveAssemblyReference.cache
+D:\Git\C# practice\1218重写ToString方法\obj\Debug\1218重写ToString方法.exe
+D:\Git\C# practice\1218重写ToString方法\obj\Debug\1218重写ToString方法.pdb
