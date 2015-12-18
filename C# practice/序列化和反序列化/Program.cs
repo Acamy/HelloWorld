@@ -21,10 +21,7 @@ namespace 序列化和反序列化
             //{
             //    //开始序列化对象
             //    BinaryFormatter bf = new BinaryFormatter();
-            //    bf.Serialize(fsWrite,p);
-            //    //string str="13dfsa";
-            //    //byte[] buffer=Encoding.Default.GetBytes(str);
-            //    //fsWrite.Write(buffer, 0, buffer.Length);
+            //    bf.Serialize(fsWrite,p);           
             //    Console.WriteLine("序列化成功！");
             //}
 
