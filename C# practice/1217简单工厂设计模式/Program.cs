@@ -14,6 +14,7 @@ namespace _1217简单工厂设计模式
             String brand = Console.ReadLine();
             NoteBook nb = GetNoteBook(brand);
             nb.SayHello();
+            Console.ReadKey();
 
         }
         public static NoteBook GetNoteBook(string brand)

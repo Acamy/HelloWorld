@@ -1,0 +1,6 @@
+D:\Git\C# practice\序列化和反序列化\bin\Debug\序列化和反序列化.exe.config
+D:\Git\C# practice\序列化和反序列化\bin\Debug\序列化和反序列化.exe
+D:\Git\C# practice\序列化和反序列化\bin\Debug\序列化和反序列化.pdb
+D:\Git\C# practice\序列化和反序列化\obj\Debug\序列化和反序列化.csprojResolveAssemblyReference.cache
+D:\Git\C# practice\序列化和反序列化\obj\Debug\序列化和反序列化.exe
+D:\Git\C# practice\序列化和反序列化\obj\Debug\序列化和反序列化.pdb

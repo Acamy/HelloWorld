@@ -25,9 +25,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1216电脑_移动硬盘_U�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1216抽象类求圆和正方形的面积", "抽象类求圆和正方形的面积\1216抽象类求圆和正方形的面积.csproj", "{B3E3ED2F-5D18-4757-8796-9743B52AEC44}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1216  FileStream读取写入数据", "1216  FileStream读取写入数据\1216  FileStream读取写入数据.csproj", "{4A07A0C6-ADBE-4F46-9D9F-8EE8488EB74C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1216  FileStream 读取写入数据", "1216  FileStream读取写入数据\1216  FileStream 读取写入数据.csproj", "{4A07A0C6-ADBE-4F46-9D9F-8EE8488EB74C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1217简单工厂设计模式", "1217简单工厂设计模式\1217简单工厂设计模式.csproj", "{02ED3A69-1F35-496F-90FE-3D306DC82C8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "序列化和反序列化", "序列化和反序列化\序列化和反序列化.csproj", "{54E24583-E607-4D40-85AF-BB518C31EE05}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -169,6 +171,16 @@ Global
 		{02ED3A69-1F35-496F-90FE-3D306DC82C8B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{02ED3A69-1F35-496F-90FE-3D306DC82C8B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{02ED3A69-1F35-496F-90FE-3D306DC82C8B}.Release|x86.ActiveCfg = Release|Any CPU
+		{54E24583-E607-4D40-85AF-BB518C31EE05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54E24583-E607-4D40-85AF-BB518C31EE05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54E24583-E607-4D40-85AF-BB518C31EE05}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{54E24583-E607-4D40-85AF-BB518C31EE05}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{54E24583-E607-4D40-85AF-BB518C31EE05}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{54E24583-E607-4D40-85AF-BB518C31EE05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54E24583-E607-4D40-85AF-BB518C31EE05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54E24583-E607-4D40-85AF-BB518C31EE05}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{54E24583-E607-4D40-85AF-BB518C31EE05}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{54E24583-E607-4D40-85AF-BB518C31EE05}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
