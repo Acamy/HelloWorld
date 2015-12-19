@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1219显示实现接口", "1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1219多态实现的三种方法比较，虚方法，抽象类，接口", "1219多态实现的三种方法比较，虚方法，抽象类，接口\1219多态实现的三种方法比较，虚方法，抽象类，接口.csproj", "{57F73304-4894-4C70-B1A6-7C006DDF0C07}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1219超市收银系统", "1219超市收银系统\1219超市收银系统.csproj", "{1B7BB436-9ECB-41F9-9F36-042021421796}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -253,6 +255,16 @@ Global
 		{57F73304-4894-4C70-B1A6-7C006DDF0C07}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{57F73304-4894-4C70-B1A6-7C006DDF0C07}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{57F73304-4894-4C70-B1A6-7C006DDF0C07}.Release|x86.ActiveCfg = Release|Any CPU
+		{1B7BB436-9ECB-41F9-9F36-042021421796}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B7BB436-9ECB-41F9-9F36-042021421796}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B7BB436-9ECB-41F9-9F36-042021421796}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{1B7BB436-9ECB-41F9-9F36-042021421796}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{1B7BB436-9ECB-41F9-9F36-042021421796}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1B7BB436-9ECB-41F9-9F36-042021421796}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B7BB436-9ECB-41F9-9F36-042021421796}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B7BB436-9ECB-41F9-9F36-042021421796}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{1B7BB436-9ECB-41F9-9F36-042021421796}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{1B7BB436-9ECB-41F9-9F36-042021421796}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

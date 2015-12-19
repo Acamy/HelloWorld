@@ -1,0 +1,6 @@
+D:\Git\C# practice\1219超市收银系统\bin\Debug\1219超市收银系统.exe.config
+D:\Git\C# practice\1219超市收银系统\obj\Debug\1219超市收银系统.csprojResolveAssemblyReference.cache
+D:\Git\C# practice\1219超市收银系统\bin\Debug\1219超市收银系统.exe
+D:\Git\C# practice\1219超市收银系统\bin\Debug\1219超市收银系统.pdb
+D:\Git\C# practice\1219超市收银系统\obj\Debug\1219超市收银系统.exe
+D:\Git\C# practice\1219超市收银系统\obj\Debug\1219超市收银系统.pdb

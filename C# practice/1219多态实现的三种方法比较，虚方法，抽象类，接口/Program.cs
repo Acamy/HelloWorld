@@ -13,6 +13,7 @@ namespace _1219多态实现的三种方法比较_虚方法_抽象类_接口
             //真的鸭子会游泳，木头鸭子不会游泳，橡皮甲子会游泳
             ISwimming swim = new MuDuck();//XPDuck,RealDuck
             swim.Swim();
+            Console.WriteLine(Guid.NewGuid().ToString());
 
         }
     }
