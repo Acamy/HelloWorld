@@ -1,0 +1,6 @@
+D:\Git\C# practice\接口\bin\Debug\接口.exe.config
+D:\Git\C# practice\接口\bin\Debug\接口.exe
+D:\Git\C# practice\接口\bin\Debug\接口.pdb
+D:\Git\C# practice\接口\obj\Debug\接口.csprojResolveAssemblyReference.cache
+D:\Git\C# practice\接口\obj\Debug\接口.exe
+D:\Git\C# practice\接口\obj\Debug\接口.pdb

@@ -1,0 +1,6 @@
+D:\Git\C# practice\1219多态实现的三种方法比较，虚方法，抽象类，接口\bin\Debug\1219多态实现的三种方法比较，虚方法，抽象类，接口.exe.config
+D:\Git\C# practice\1219多态实现的三种方法比较，虚方法，抽象类，接口\obj\Debug\1219多态实现的三种方法比较，虚方法，抽象类，接口.csprojResolveAssemblyReference.cache
+D:\Git\C# practice\1219多态实现的三种方法比较，虚方法，抽象类，接口\bin\Debug\1219多态实现的三种方法比较，虚方法，抽象类，接口.exe
+D:\Git\C# practice\1219多态实现的三种方法比较，虚方法，抽象类，接口\bin\Debug\1219多态实现的三种方法比较，虚方法，抽象类，接口.pdb
+D:\Git\C# practice\1219多态实现的三种方法比较，虚方法，抽象类，接口\obj\Debug\1219多态实现的三种方法比较，虚方法，抽象类，接口.exe
+D:\Git\C# practice\1219多态实现的三种方法比较，虚方法，抽象类，接口\obj\Debug\1219多态实现的三种方法比较，虚方法，抽象类，接口.pdb
