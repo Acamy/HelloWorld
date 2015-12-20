@@ -45,6 +45,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1219多态实现的三种�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1219超市收银系统", "1219超市收银系统\1219超市收银系统.csproj", "{1B7BB436-9ECB-41F9-9F36-042021421796}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1220MD5 加密", "1220MD5 加密\1220MD5 加密.csproj", "{E46A4DC7-17D1-4D6E-9A2B-71589AEF369F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -265,6 +267,16 @@ Global
 		{1B7BB436-9ECB-41F9-9F36-042021421796}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{1B7BB436-9ECB-41F9-9F36-042021421796}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{1B7BB436-9ECB-41F9-9F36-042021421796}.Release|x86.ActiveCfg = Release|Any CPU
+		{E46A4DC7-17D1-4D6E-9A2B-71589AEF369F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E46A4DC7-17D1-4D6E-9A2B-71589AEF369F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E46A4DC7-17D1-4D6E-9A2B-71589AEF369F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{E46A4DC7-17D1-4D6E-9A2B-71589AEF369F}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{E46A4DC7-17D1-4D6E-9A2B-71589AEF369F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E46A4DC7-17D1-4D6E-9A2B-71589AEF369F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E46A4DC7-17D1-4D6E-9A2B-71589AEF369F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E46A4DC7-17D1-4D6E-9A2B-71589AEF369F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{E46A4DC7-17D1-4D6E-9A2B-71589AEF369F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{E46A4DC7-17D1-4D6E-9A2B-71589AEF369F}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,9 @@
+D:\Git\C# practice\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+D:\Git\C# practice\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+D:\Git\C# practice\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+D:\Git\C# practice\Winform\Winform\bin\Debug\WindowsFormsApplication1.exe.config
+D:\Git\C# practice\Winform\Winform\obj\Debug\WindowsFormsApplication1.exe
+D:\Git\C# practice\Winform\Winform\obj\Debug\WindowsFormsApplication1.pdb
+D:\Git\C# practice\1220 Winform\bin\Debug\WindowsFormsApplication1.exe.config
+D:\Git\C# practice\1220 Winform\obj\Debug\WindowsFormsApplication1.exe
+D:\Git\C# practice\1220 Winform\obj\Debug\WindowsFormsApplication1.pdb
