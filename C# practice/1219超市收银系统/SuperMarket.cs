@@ -31,7 +31,7 @@ namespace _1219超市收银系统
             Console.WriteLine("请选择您的打折方式 1--不打折 2--打九折 3--打85折 4--满300减50 5--满500减100");
             string input=Console.ReadLine();
             //通过简单工厂的设计模式根据用户的输入获得一个打折对象
-            CalFather cal = GetCal(input);
+            CalFather cal = GetCal(input);//简单工厂模式
             double totalMoney=cal.GetTotalMoney(realMoney);
             Console.WriteLine("打完折后，您就付{0}元",totalMoney);
             Console.WriteLine("以下是您的购物信息:");
