@@ -7,3 +7,11 @@ D:\Git\C# practice\Winform\Winform\obj\Debug\WindowsFormsApplication1.pdb
 D:\Git\C# practice\1220 Winform\bin\Debug\WindowsFormsApplication1.exe.config
 D:\Git\C# practice\1220 Winform\obj\Debug\WindowsFormsApplication1.exe
 D:\Git\C# practice\1220 Winform\obj\Debug\WindowsFormsApplication1.pdb
+D:\Git\C# practice\1220 Winform\bin\Debug\WindowsFormsApplication1.exe
+D:\Git\C# practice\1220 Winform\bin\Debug\WindowsFormsApplication1.pdb
+D:\Git\C# practice\1220 Winform\obj\Debug\Winform.csprojResolveAssemblyReference.cache
+D:\Git\C# practice\1220 Winform\obj\Debug\WindowsFormsApplication1.Form1.resources
+D:\Git\C# practice\1220 Winform\obj\Debug\WindowsFormsApplication1.Form2.resources
+D:\Git\C# practice\1220 Winform\obj\Debug\WindowsFormsApplication1.Form3.resources
+D:\Git\C# practice\1220 Winform\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+D:\Git\C# practice\1220 Winform\obj\Debug\Winform.csproj.GenerateResource.Cache
