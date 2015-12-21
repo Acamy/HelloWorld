@@ -20,6 +20,7 @@ namespace _1221跑马灯
         private void timer1_Tick(object sender, EventArgs e)
         {
             //MessageBox.Show("你中病毒了！关不掉了吧，哈哈");
+            
             label2.Text=label2.Text.Substring(1) + label2.Text.Substring(0,1);
         }
         /// <summary>
@@ -30,6 +31,7 @@ namespace _1221跑马灯
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            timer1.Stop();
             label3.Text = DateTime.Now.ToString();
         }
         /// <summary>
@@ -54,8 +56,8 @@ namespace _1221跑马灯
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
-           
+
+           timer1.Start();
            s.SoundLocation = @"严艺丹 - 无果.wav";
            s.Play();
             
@@ -64,6 +66,7 @@ namespace _1221跑马灯
         private void button2_Click(object sender, EventArgs e)
         {
             s.Stop();
+            timer1.Stop();
         }
 
         private void label2_Click(object sender, EventArgs e)
