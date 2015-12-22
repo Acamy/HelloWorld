@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1221 记事本", "1221 记事本\1221 记事本.csproj", "{BF6767C2-0EBB-4022-8D4D-201BF1292012}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1221Textbox", "1221Textbox\1221Textbox.csproj", "{A3359A94-4145-469B-8CDB-C61DFDF1FAF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1221跑马灯", "1221跑马灯\1221跑马灯.csproj", "{EF55BFE9-376B-4713-A34B-83945ED98BC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1220DoYouLoveMe", "1220DoYouLoveMe\1220DoYouLoveMe.csproj", "{8EC83D03-259A-4F3C-B0A5-93027A602ADB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1222MDI窗体设计", "1222MDI窗体设计\1222MDI窗体设计.csproj", "{36418D18-F65C-45C2-BBD8-44261297061D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1222Picture和Timer的练习", "1222Picture和Timer的练习\1222Picture和Timer的练习.csproj", "{597C892E-A3F0-4272-8535-0336AB144BC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1222单选和多选框", "1222单选和多选框\1222单选和多选框.csproj", "{AF2FB443-E3F3-4CB5-AF9A-FE2B8137A76E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1222图片上一张下一张", "1222图片上一张下一张\1222图片上一张下一张.csproj", "{89DA5BA9-BBAD-4010-AF0B-98B9A4D34258}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF6767C2-0EBB-4022-8D4D-201BF1292012}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF6767C2-0EBB-4022-8D4D-201BF1292012}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF6767C2-0EBB-4022-8D4D-201BF1292012}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF6767C2-0EBB-4022-8D4D-201BF1292012}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3359A94-4145-469B-8CDB-C61DFDF1FAF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3359A94-4145-469B-8CDB-C61DFDF1FAF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3359A94-4145-469B-8CDB-C61DFDF1FAF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3359A94-4145-469B-8CDB-C61DFDF1FAF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF55BFE9-376B-4713-A34B-83945ED98BC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF55BFE9-376B-4713-A34B-83945ED98BC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF55BFE9-376B-4713-A34B-83945ED98BC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF55BFE9-376B-4713-A34B-83945ED98BC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EC83D03-259A-4F3C-B0A5-93027A602ADB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EC83D03-259A-4F3C-B0A5-93027A602ADB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EC83D03-259A-4F3C-B0A5-93027A602ADB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EC83D03-259A-4F3C-B0A5-93027A602ADB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36418D18-F65C-45C2-BBD8-44261297061D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36418D18-F65C-45C2-BBD8-44261297061D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36418D18-F65C-45C2-BBD8-44261297061D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36418D18-F65C-45C2-BBD8-44261297061D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{597C892E-A3F0-4272-8535-0336AB144BC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{597C892E-A3F0-4272-8535-0336AB144BC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{597C892E-A3F0-4272-8535-0336AB144BC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{597C892E-A3F0-4272-8535-0336AB144BC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF2FB443-E3F3-4CB5-AF9A-FE2B8137A76E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF2FB443-E3F3-4CB5-AF9A-FE2B8137A76E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF2FB443-E3F3-4CB5-AF9A-FE2B8137A76E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF2FB443-E3F3-4CB5-AF9A-FE2B8137A76E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89DA5BA9-BBAD-4010-AF0B-98B9A4D34258}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89DA5BA9-BBAD-4010-AF0B-98B9A4D34258}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89DA5BA9-BBAD-4010-AF0B-98B9A4D34258}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89DA5BA9-BBAD-4010-AF0B-98B9A4D34258}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
