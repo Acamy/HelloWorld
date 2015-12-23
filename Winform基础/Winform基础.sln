@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1222.浏览器控件", "122
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1222. 日期选择器", "1222. 日期选择器\1222. 日期选择器.csproj", "{45E0D0B8-DCF5-4918-80C5-700684272115}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1223.listbox实现播放选中图片", "1223.listbox实现播放选中图片\1223.listbox实现播放选中图片.csproj", "{990DBE64-482C-434C-9C6D-73E96529DDB4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{45E0D0B8-DCF5-4918-80C5-700684272115}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45E0D0B8-DCF5-4918-80C5-700684272115}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45E0D0B8-DCF5-4918-80C5-700684272115}.Release|Any CPU.Build.0 = Release|Any CPU
+		{990DBE64-482C-434C-9C6D-73E96529DDB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{990DBE64-482C-434C-9C6D-73E96529DDB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{990DBE64-482C-434C-9C6D-73E96529DDB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{990DBE64-482C-434C-9C6D-73E96529DDB4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
