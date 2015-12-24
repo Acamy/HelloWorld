@@ -44,13 +44,13 @@ namespace _1224.记事本儿应用程序
             ofd.Title="请选择要打开的文本文件";
             ofd.InitialDirectory = @"C:\Users\Acamy\Desktop";
             ofd.Multiselect = true;
-            ofd.Filter = "文本文件|*.txt|所有文件|*.*";
+            ofd.Filter = "文本文件|*.txt|所有文件|*.*";//dsa
             ofd.ShowDialog();
 
 
             string path = ofd.FileName;
             string fileName = Path.GetFileName(path);
-            listBox1.Items.Add(path);
+            listBox1.Items.Add(fileName);
             if (path=="")
             {
                 return;
