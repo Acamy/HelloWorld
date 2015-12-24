@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -41,6 +42,29 @@ namespace Directory类
             //}
             //Directory.Delete(@"E:\Pictures\a",true);
             
+            //Process[] pros=Process.GetProcesses();
+            //foreach (var item in pros)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //Process.Start("calc");
+            //Process.Start("mspaint");
+            //Process.Start("notepad");
+            //Process.Start("iexplore", "http://www.baidu.com");
+
+            ////通过一个进程打开指定文件
+            //ProcessStartInfo psi = new ProcessStartInfo(@"C:\Users\Acamy\Desktop\3.txt");
+            ////首先，创建一个进程
+            //Process p = new Process();
+            //p.StartInfo = psi;
+            //p.Start();
+
+
+
+        
+            
         }
     }
 }
+

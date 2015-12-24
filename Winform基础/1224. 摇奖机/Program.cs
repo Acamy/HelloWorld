@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace _1224.记事本儿应用程序
+namespace _1224.摇奖机
 {
     static class Program
     {
@@ -16,7 +15,7 @@ namespace _1224.记事本儿应用程序
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1()); 
-            
+            Application.Run(new Form1());
+        }
     }
 }

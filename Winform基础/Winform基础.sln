@@ -37,6 +37,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1224.字体和颜色对话�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1224.记事本儿应用程序", "1224.记事本儿应用程序\1224.记事本儿应用程序.csproj", "{9BE87C47-D8DC-4B5A-96F5-E24F50052BC6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1224.多线程", "1224.多线程\1224.多线程.csproj", "{5EAA01FD-9D6F-4BED-85EF-7891BA4D30BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1224. 摇奖机", "1224. 摇奖机\1224. 摇奖机.csproj", "{BA3EF7EE-E0B0-4399-8B3E-570D2D0D5BA4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +115,14 @@ Global
 		{9BE87C47-D8DC-4B5A-96F5-E24F50052BC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BE87C47-D8DC-4B5A-96F5-E24F50052BC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BE87C47-D8DC-4B5A-96F5-E24F50052BC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EAA01FD-9D6F-4BED-85EF-7891BA4D30BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EAA01FD-9D6F-4BED-85EF-7891BA4D30BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EAA01FD-9D6F-4BED-85EF-7891BA4D30BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EAA01FD-9D6F-4BED-85EF-7891BA4D30BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA3EF7EE-E0B0-4399-8B3E-570D2D0D5BA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA3EF7EE-E0B0-4399-8B3E-570D2D0D5BA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA3EF7EE-E0B0-4399-8B3E-570D2D0D5BA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA3EF7EE-E0B0-4399-8B3E-570D2D0D5BA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
