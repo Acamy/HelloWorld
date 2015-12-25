@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1224.多线程", "1224.多�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1224. 摇奖机", "1224. 摇奖机\1224. 摇奖机.csproj", "{BA3EF7EE-E0B0-4399-8B3E-570D2D0D5BA4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{1C1B6DE1-0411-450D-9EE5-CFFE614A0038}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{BA3EF7EE-E0B0-4399-8B3E-570D2D0D5BA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA3EF7EE-E0B0-4399-8B3E-570D2D0D5BA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA3EF7EE-E0B0-4399-8B3E-570D2D0D5BA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C1B6DE1-0411-450D-9EE5-CFFE614A0038}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C1B6DE1-0411-450D-9EE5-CFFE614A0038}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C1B6DE1-0411-450D-9EE5-CFFE614A0038}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C1B6DE1-0411-450D-9EE5-CFFE614A0038}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

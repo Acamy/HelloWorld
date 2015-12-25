@@ -29,20 +29,21 @@ namespace _1224.摇奖机
             }
             else
             {
-                foreach (var item in listBox1.Items)
-                {
-                    if (label1.Text + label2.Text + label3.Text==item)
-                    {
-                        b = true;
-                    }
-                    else
-                    {
-                        b = false;
-                    }
-                }
+                //foreach (var item in listBox1.Items)
+                //{
+                //    if (label1.Text + label2.Text + label3.Text==item)
+                //    {
+                //        b = true;
+                //    }
+                //    else
+                //    {
+                //        b = false;
+                //    }
+                //}
+                th.Abort();
                 b = false;
                 button1.Text = "开始";
-                th.Abort();
+                
                 listBox1.Items.Add(label1.Text + label2.Text + label3.Text);
                 
             }
