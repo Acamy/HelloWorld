@@ -21,20 +21,26 @@ namespace Server
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            //当点击开始监听的时候，在服务器端创建一个负责监IP地址跟端口号的socket
-            Socket socketWatch = new Socket(AddressFamily.InterNetwork,SocketType.Stream,ProtocolType.Tcp);
-            IPAddress ip = IPAddress.Any;
-            //创建端口号对象
-            IPEndPoint point = new IPEndPoint(ip,Convert.ToInt32(txtPort.Text));
-            //监听  目的：等待客户端连接过来
-            socketWatch.Bind(point);
-            ShowMsg("监听成功");
-            socketWatch.Listen(10);
+            try
+            {
+                //当点击开始监听的时候，在服务器端创建一个负责监IP地址跟端口号的socket
+                Socket socketWatch = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+                IPAddress ip = IPAddress.Any;
+                //创建端口号对象
+                IPEndPoint point = new IPEndPoint(ip, Convert.ToInt32(txtPort.Text));
+                //监听  目的：等待客户端连接过来
+                socketWatch.Bind(point);
+                ShowMsg("监听成功");
+                socketWatch.Listen(10);
 
-            Thread th = new Thread(Listen);
-            th.IsBackground = true;
-            th.Start(socketWatch);
-            
+                Thread th = new Thread(Listen);
+                th.IsBackground = true;
+                th.Start(socketWatch);
+            }
+            catch 
+            {
+                               
+            }                       
         }
         /// <summary>
         /// 等待客户端的连接，并且创建与这通信用的socket
@@ -46,22 +52,30 @@ namespace Server
             //等待客户端的连接，并且创建一个负责通信用的socket
             while (true)
             {
-                //等待客户端的连接，并且创建与这通信用的socket
-                Socket socketSend = socketWatch.Accept();
-                //115.156.139.115：连接成功
-                ShowMsg(socketSend.RemoteEndPoint.ToString() + ":" + "连接成功");
-                //开户一个新线程不停的接受客户端发送过来的消息
-                Thread th = new Thread(Receive);
-                th.IsBackground = true;
-                th.Start();
+                try
+                {
+                    //等待客户端的连接，并且创建与这通信用的socket
+                    Socket socketSend = socketWatch.Accept();
+                    //115.156.139.115：连接成功
+                    ShowMsg(socketSend.RemoteEndPoint.ToString() + ":" + "连接成功");
+                    //开户一个新线程不停的接受客户端发送过来的消息
+
+                    Thread th = new Thread(Receive);
+                    th.IsBackground = true;
+                    th.Start(socketSend);
+                }
+                catch 
+                {
+                   
+                }
                 
             }
             
         }
-        /// <summary>
+       /// <summary>
         /// 客户端不断的接受客户端发送过来的消息
-        /// </summary>
-        /// <param name="o"></param>
+       /// </summary>
+       /// <param name="o"></param>
         void Receive(object o)
         {
             Socket socketSend = o as Socket;      
@@ -72,7 +86,7 @@ namespace Server
                     //客户端连接成功后，服务器应该接受客户端发来的消息
                     byte[] buffer = new byte[1024 * 1024 * 2];
                     int r = socketSend.Receive(buffer);
-                    if (r==0)
+                    if (r == 0)
                     {
                         break;
                     }
@@ -81,8 +95,8 @@ namespace Server
                 }
                 catch 
                 {
-                                      
-                }
+                     throw;
+                }               
                 
             }
         }
@@ -94,6 +108,11 @@ namespace Server
         private void Form1_Load(object sender, EventArgs e)
         {
             Control.CheckForIllegalCrossThreadCalls = false;
+        }
+
+        private void btnSend_Click(object sender, EventArgs e)
+        {
+
         }
 
        
