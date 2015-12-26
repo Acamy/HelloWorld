@@ -41,6 +41,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textServer
@@ -63,33 +64,35 @@
             // 
             // btnConnect1
             // 
-            this.btnConnect1.Location = new System.Drawing.Point(315, 607);
+            this.btnConnect1.Location = new System.Drawing.Point(430, 36);
             this.btnConnect1.Name = "btnConnect1";
-            this.btnConnect1.Size = new System.Drawing.Size(58, 27);
+            this.btnConnect1.Size = new System.Drawing.Size(105, 27);
             this.btnConnect1.TabIndex = 2;
-            this.btnConnect1.Text = "连接";
+            this.btnConnect1.Text = "重新连接服务器";
             this.btnConnect1.UseVisualStyleBackColor = true;
-            this.btnConnect1.Visible = false;
             this.btnConnect1.Click += new System.EventHandler(this.btnConnect1_Click);
             // 
             // textLog
             // 
             this.textLog.BackColor = System.Drawing.Color.White;
+            this.textLog.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.textLog.Location = new System.Drawing.Point(23, 66);
             this.textLog.Multiline = true;
             this.textLog.Name = "textLog";
             this.textLog.ReadOnly = true;
-            this.textLog.Size = new System.Drawing.Size(523, 377);
+            this.textLog.Size = new System.Drawing.Size(523, 370);
             this.textLog.TabIndex = 3;
             // 
             // textMsg
             // 
+            this.textMsg.Font = new System.Drawing.Font("楷体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.textMsg.Location = new System.Drawing.Point(23, 463);
             this.textMsg.Multiline = true;
             this.textMsg.Name = "textMsg";
             this.textMsg.Size = new System.Drawing.Size(523, 138);
             this.textMsg.TabIndex = 4;
-            this.textMsg.Text = "欢迎您使用何氏实时聊天通讯智能客户端1.0(Client 版)！请在此文本框输入你想要发送的信息。";
+            this.textMsg.Text = "   欢迎您使用何氏实时聊天通讯智能客户端1.0版本！请在此文本框输入你想要发送的信息。";
+            this.textMsg.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textMsg_KeyDown);
             // 
             // btnSend2
             // 
@@ -106,7 +109,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(62, 30);
+            this.label1.Location = new System.Drawing.Point(55, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(101, 12);
             this.label1.TabIndex = 6;
@@ -114,7 +117,7 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(160, 23);
+            this.txtName.Location = new System.Drawing.Point(153, 9);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(70, 21);
             this.txtName.TabIndex = 7;
@@ -122,7 +125,7 @@
             // 
             // txtInfo
             // 
-            this.txtInfo.Location = new System.Drawing.Point(391, 23);
+            this.txtInfo.Location = new System.Drawing.Point(384, 9);
             this.txtInfo.Name = "txtInfo";
             this.txtInfo.Size = new System.Drawing.Size(70, 21);
             this.txtInfo.TabIndex = 9;
@@ -131,7 +134,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(293, 27);
+            this.label2.Location = new System.Drawing.Point(286, 13);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(101, 12);
             this.label2.TabIndex = 8;
@@ -158,10 +161,21 @@
             this.label4.TabIndex = 11;
             this.label4.Text = "信息输入框：";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(455, 439);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(91, 23);
+            this.button1.TabIndex = 12;
+            this.button1.Text = " 保存聊天记录";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(568, 648);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtInfo);
@@ -180,6 +194,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "何氏实时聊天通讯智能客户端1.0(Client 版)";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -205,6 +220,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button1;
     }
 }
 

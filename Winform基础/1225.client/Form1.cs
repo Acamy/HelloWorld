@@ -22,7 +22,7 @@ namespace _1225.client
         Socket socketSend;
         private void btnConnect1_Click(object sender, EventArgs e)
         {
-           
+            Connect();
             
         }
         
@@ -118,6 +118,11 @@ namespace _1225.client
         {
             Control.CheckForIllegalCrossThreadCalls = false;
             textMsg.Select();
+            Connect();
+        }
+
+        private void Connect()
+        {
             try
             {
                 //创建负责通信的socket
@@ -142,6 +147,46 @@ namespace _1225.client
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+           
+        }
+
+        private void textMsg_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                
+                btnSend2_Click(sender, e);
+            }
+        }
+        private void textMsg_KeyDown(object sender, KeyPressEventArgs e)
+        {
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog sfd = new SaveFileDialog();
+            sfd.Title = "请选择要保存的路径";
+            sfd.InitialDirectory = @"C:\";
+            sfd.Filter = "文本文件|*.txt|所有文件|*.*";
+
+            sfd.ShowDialog();
+
+            string path = sfd.FileName;
+            if (path == "")
+            {
+                return;
+            }
+            using (FileStream fsWrite = new FileStream(path, FileMode.OpenOrCreate, FileAccess.Write))
+            {
+                byte[] buffer = Encoding.Default.GetBytes(textLog.Text);
+                fsWrite.Write(buffer, 0, buffer.Length);
+            }
+            MessageBox.Show("保存成功！");
         }
 
     }
