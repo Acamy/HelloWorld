@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.txtServer = new System.Windows.Forms.TextBox();
             this.txtPort = new System.Windows.Forms.TextBox();
             this.btnStart = new System.Windows.Forms.Button();
@@ -106,6 +107,7 @@
             this.button2.TabIndex = 7;
             this.button2.Text = "选择";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -115,6 +117,7 @@
             this.button3.TabIndex = 8;
             this.button3.Text = "发送文件";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // btnSend
             // 
@@ -134,6 +137,7 @@
             this.button5.TabIndex = 10;
             this.button5.Text = "震动";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // Form1
             // 
@@ -151,8 +155,9 @@
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.txtPort);
             this.Controls.Add(this.txtServer);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "何氏实时聊天通讯智能客户端1.0(Server 版)";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
