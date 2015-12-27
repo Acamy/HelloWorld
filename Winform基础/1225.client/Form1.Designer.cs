@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.textServer = new System.Windows.Forms.TextBox();
             this.textPort = new System.Windows.Forms.TextBox();
@@ -42,6 +43,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textServer
@@ -82,6 +86,7 @@
             this.textLog.ReadOnly = true;
             this.textLog.Size = new System.Drawing.Size(523, 370);
             this.textLog.TabIndex = 3;
+            this.textLog.TextChanged += new System.EventHandler(this.textLog_TextChanged);
             // 
             // textMsg
             // 
@@ -91,7 +96,7 @@
             this.textMsg.Name = "textMsg";
             this.textMsg.Size = new System.Drawing.Size(523, 138);
             this.textMsg.TabIndex = 4;
-            this.textMsg.Text = "   欢迎您使用何氏实时聊天通讯智能客户端1.0版本！请在此文本框输入你想要发送的信息。";
+            this.textMsg.Text = "   欢迎您使用JoyChat实时聊天通讯智能客户端1.0版本！请在此文本框输入你想要发送的信息。";
             this.textMsg.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textMsg_KeyDown);
             // 
             // btnSend2
@@ -171,10 +176,37 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
+            this.notifyIcon1.Text = "JoyChat1.0";
+            this.notifyIcon1.Visible = true;
+            this.notifyIcon1.BalloonTipClicked += new System.EventHandler(this.notifyIcon1_BalloonTipClicked);
+            this.notifyIcon1.BalloonTipShown += new System.EventHandler(this.notifyIcon1_BalloonTipShown);
+            this.notifyIcon1.Click += new System.EventHandler(this.notifyIcon1_Click);
+            this.notifyIcon1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDoubleClick);
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 3000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(147, 37);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 13;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Visible = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Form1
             // 
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(568, 648);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -192,7 +224,6 @@
             this.Location = new System.Drawing.Point(300, 300);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "何氏实时聊天通讯智能客户端1.0(Client 版)";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.ResumeLayout(false);
@@ -221,6 +252,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.NotifyIcon notifyIcon1;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button button2;
     }
 }
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,7 +15,7 @@ using System.Windows.Forms;
 
 namespace Server
 {
-
+    
 
     
     public partial class Form1 : Form
@@ -32,12 +33,36 @@ namespace Server
         //}
         bool b = false;
         string log = @"E:\Log.txt";
+        Icon ic_1 = new Icon(@"E:\Pictures\exe.ico");
+        Icon ic_2 = new Icon(@"E:\Pictures\touming.ico");
         public Form1()
         {
             InitializeComponent();
         }
-        Icon ic_1 = new Icon(@"E:\Pictures\exe.ico");
-        Icon ic_2 = new Icon(@"E:\Pictures\touming.ico");
+        //private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        //{
+        //    if (checkBox1.Checked) //设置开机自启动  
+        //    {
+        //        MessageBox.Show("设置开机自启动，需要修改注册表", "提示");
+        //        string path = Application.ExecutablePath;
+        //        RegistryKey rk = Registry.LocalMachine;
+        //        RegistryKey rk2 = rk.CreateSubKey(@"C:\");
+        //        rk2.SetValue("JcShutdown", path);
+        //        rk2.Close();
+        //        rk.Close();
+        //    }
+        //    else //取消开机自启动  
+        //    {
+        //        MessageBox.Show("取消开机自启动，需要修改注册表", "提示");
+        //        string path = Application.ExecutablePath;
+        //        RegistryKey rk = Registry.LocalMachine;
+        //        RegistryKey rk2 = rk.CreateSubKey(@"Software\Microsoft\Windows\CurrentVersion\Run");
+        //        rk2.DeleteValue("JcShutdown", false);
+        //        rk2.Close();
+        //        rk.Close();
+        //    }
+        //}
+        
         public void ss()
         {
             //while (b)
@@ -166,9 +191,51 @@ namespace Server
         {
             txtLog.AppendText(str+"\r\n");
         }
-
+                /// <summary>
+        /// 设置应用程序开机自动运行
+        /// </summary>
+        /// <param name="fileName">应用程序的文件名</param>
+        /// <param name="isAutoRun">是否自动运行，为false时，取消自动运行</param>
+        /// <exception cref="System.Exception">设置不成功时抛出异常</exception>
+        //public static void SetAutoRun(string fileName, bool isAutoRun)
+        //{
+           
+        //}
+        //调用
+          //SetAutoRun("flyfox.exe",true);
         private void Form1_Load(object sender, EventArgs e)
         {
+            string fileName = Application.ExecutablePath;
+
+            //MessageBox.Show(fileName);
+            bool isAutoRun = true;
+            RegistryKey reg = null;
+            try
+            {
+                String name = fileName.Substring(fileName.LastIndexOf("\\") + 1);
+                reg = Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
+                reg.OpenSubKey(name);
+                if (reg == null)
+                    reg = Registry.LocalMachine.CreateSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run");
+                if (isAutoRun)
+                    reg.SetValue(name, fileName);
+                else
+                    reg.SetValue(name, false);
+            }
+            catch 
+            {
+            }
+            finally
+            {
+                if (reg != null)
+                    reg.Close();
+            }
+            //string path = Application.ExecutablePath;
+            //RegistryKey rk = Registry.LocalMachine;
+            //RegistryKey rk2 = rk.CreateSubKey(@"C:\");
+            //rk2.SetValue("JcShutdown", path);
+            //rk2.Close();
+            //rk.Close();
 
             Control.CheckForIllegalCrossThreadCalls = false;
             txtMessage.Select();
@@ -327,6 +394,14 @@ namespace Server
 
         private void txtLog_TextChanged(object sender, EventArgs e)
         {
+            if (this.Visible==false)
+            {
+                notifyIcon1.BalloonTipTitle = "消息提示";
+                notifyIcon1.BalloonTipText = "您收到了来自何宝华的一条新消息哦，点击查看！";
+                notifyIcon1.BalloonTipIcon = ToolTipIcon.Warning;
+                notifyIcon1.ShowBalloonTip(30);
+            }
+           
             timer1.Enabled = true;
             b = true;
             //ss();
@@ -388,6 +463,12 @@ namespace Server
         {
             timer1.Enabled = false;
             b = false;
+            if (this.Visible == false)
+                this.Visible = true;
+        }
+
+        private void notifyIcon1_BalloonTipClicked(object sender, EventArgs e)
+        {
             if (this.Visible == false)
                 this.Visible = true;
         }

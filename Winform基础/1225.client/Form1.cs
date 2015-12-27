@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,12 +20,32 @@ namespace _1225.client
         {
             InitializeComponent();            
         }
+        protected override void OnClosing(CancelEventArgs e)
+        {
+            e.Cancel = true;
+            //object sender = 1;
+            //EventArgs e;
+            if (this.Visible==true)
+            {
+                this.Visible = false;
+            }
+            
+
+            //DialogResult r = MessageBox.Show("确定要退出程序?选择取消退出最小化到通知栏！", "操作提示", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            //if (r != DialogResult.OK)
+            //{
+            //    e.Cancel = true;
+            //    if (this.Visible == true) this.Visible = false;//假如当前窗口为显示的则隐藏窗口
+            //}
+
+        }
         Socket socketSend;
         private void btnConnect1_Click(object sender, EventArgs e)
         {
             Connect();
             
         }
+
         
 
         void Receive()
@@ -70,9 +91,6 @@ namespace _1225.client
                         ZD();
                     }
 
-
-
-
                 }
 
                 catch
@@ -83,7 +101,7 @@ namespace _1225.client
         {
             for (int i = 0; i < 500; i++)
             {
-
+                this.Visible = true;
                 this.Location = new Point(this.Location.X - 3, this.Location.Y - 3);
                 this.Location = new Point(this.Location.X + 6, this.Location.Y + 6);
                 this.Location = new Point(this.Location.X - 3, this.Location.Y - 3);
@@ -116,6 +134,34 @@ namespace _1225.client
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
+
+            string fileName = Application.ExecutablePath;
+
+            //MessageBox.Show(fileName);
+            bool isAutoRun = true;
+            RegistryKey reg = null;
+            try
+            {
+                String name = fileName.Substring(fileName.LastIndexOf("\\") + 1);
+                reg = Registry.LocalMachine.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
+                reg.OpenSubKey(name);
+                if (reg == null)
+                    reg = Registry.LocalMachine.CreateSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run");
+                if (isAutoRun)
+                    reg.SetValue(name, fileName);
+                else
+                    reg.SetValue(name, false);
+            }
+            catch
+            {
+            }
+            finally
+            {
+                if (reg != null)
+                    reg.Close();
+            }
+
             Control.CheckForIllegalCrossThreadCalls = false;
             textMsg.Select();
             Connect();
@@ -132,18 +178,24 @@ namespace _1225.client
                 //获得要连接的远程服务器应用程序的IP地址和端口号
                 socketSend.Connect(point);
                 ShowMsg(DateTime.Now.ToString() + ":连接到" + socketSend.RemoteEndPoint + "成功！");
+                //timer1.Enabled = false;
 
                 //开启一个新的线程不停的接收服务器发来的消息
                 Thread th = new Thread(Receive);
                 th.IsBackground = true;
                 th.Start();
+
+
             }
             catch
             {
-                MessageBox.Show("请先开户服务器！");
+                //MessageBox.Show("没连成功");
+                timer1.Enabled = true;
+                
             }
         }
 
+        
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -187,6 +239,143 @@ namespace _1225.client
                 fsWrite.Write(buffer, 0, buffer.Length);
             }
             MessageBox.Show("保存成功！");
+        }
+
+        private void textLog_TextChanged(object sender, EventArgs e)
+        {
+            notifyIcon1.BalloonTipTitle = "消息提示";
+            notifyIcon1.BalloonTipText = "您收到了来自何宝华的一条新消息哦，点击查看！";
+            notifyIcon1.BalloonTipIcon = ToolTipIcon.Warning;
+            if (this.Visible==false)
+            {
+                
+                notifyIcon1.ShowBalloonTip(30);
+            }
+            //else
+            //{
+            //    notifyIcon1.ShowBalloonTip(1);
+            //}
+            
+        }
+
+        private void notifyIcon1_BalloonTipClicked(object sender, EventArgs e)
+        {
+            if (this.Visible==false)
+            {
+                this.Visible = true;
+            }
+        }
+
+        private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void notifyIcon1_Click(object sender, EventArgs e)
+        {
+            if (this.Visible==false)
+            {
+                this.Visible = true;
+            }
+        }
+
+        private void notifyIcon1_BalloonTipShown(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (!socketSend.Connected)
+            {
+                Connect();
+            }
+            
+            //if (socketSend != null && socketSend.Connected)
+            //{
+            //    if (socketSend.Poll(1, SelectMode.SelectRead))
+            //    {
+            //        try
+            //        {
+            //            byte[] temp = new byte[1024];
+            //            int nRead = socketSend.Receive(temp);
+            //            if (nRead == 0)
+            //            {
+            //                MessageBox.Show("000连接已断开了，请处理");
+            //                Connect();
+            //            }
+            //        }
+            //        catch
+            //        {
+            //            MessageBox.Show("连接已断开了，请处理");
+            //            Connect();
+            //        }
+            //    }
+                //try
+                //{
+                //    int ii = socketSend.Send(new byte[1]);
+                //}
+                //catch (SocketException se)
+                //{
+                //    if (se.ErrorCode == 10054) // Error code for Connection reset 
+                //    {
+
+                //        MessageBox.Show("连接已断开了，请处理");
+                //        Connect();
+                //    }
+                //    else
+                //    {
+                //        MessageBox.Show(se.Message);
+                //    }
+                //}
+
+            //}
+            //else
+            //{
+            //    Connect();
+            //}
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            bool b = socketSend.Connected;
+            MessageBox.Show(b.ToString() );
+            //if (socketSend != null && socketSend.Connected)
+            //{
+            //    if (socketSend.Poll(1, SelectMode.SelectRead))
+            //    {
+            //        try
+            //        {
+            //            byte[] temp = new byte[1024];
+            //            int nRead = socketSend.Receive(temp);
+            //            if (nRead == 0)
+            //            {
+            //                MessageBox.Show("000连接已断开了，请处理");
+            //            }
+            //        }
+            //        catch
+            //        {
+            //            MessageBox.Show("连接已断开了，请处理");
+            //        }
+            //    }
+            //    try
+            //    {
+            //        int ii = socketSend.Send(new byte[1]);
+            //    }
+            //    catch (SocketException se)
+            //    {
+            //        if (se.ErrorCode == 10054) // Error code for Connection reset 
+            //        {
+
+            //            MessageBox.Show("连接已断开了，请处理");
+            //        }
+            //        else
+            //        {
+            //            MessageBox.Show(se.Message);
+            //        }
+            //    }
+
+            //}
         }
 
     }

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Net;
+using System.Net.Sockets;
 using System.Text;
 
 namespace Directory类
@@ -60,7 +62,11 @@ namespace Directory类
             //p.StartInfo = psi;
             //p.Start();
 
-
+            
+           
+            
+                
+             
 
         
             

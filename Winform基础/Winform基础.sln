@@ -45,6 +45,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1225.Server", "Server\1225.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1225.Client", "1225.client\1225.Client.csproj", "{65E1E208-E088-4FBB-8DCA-021D24797DBF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "socket 是否连接", "socket 是否连接\socket 是否连接.csproj", "{CF4E674E-D2D9-4E5B-BF3A-78ED52596752}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +137,10 @@ Global
 		{65E1E208-E088-4FBB-8DCA-021D24797DBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65E1E208-E088-4FBB-8DCA-021D24797DBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65E1E208-E088-4FBB-8DCA-021D24797DBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF4E674E-D2D9-4E5B-BF3A-78ED52596752}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF4E674E-D2D9-4E5B-BF3A-78ED52596752}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF4E674E-D2D9-4E5B-BF3A-78ED52596752}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF4E674E-D2D9-4E5B-BF3A-78ED52596752}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{65E1E208-E088-4FBB-8DCA-021D24797DBF}</ProjectGuid>
+    <ProjectGuid>{CF4E674E-D2D9-4E5B-BF3A-78ED52596752}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_1225.client</RootNamespace>
-    <AssemblyName>client123</AssemblyName>
+    <RootNamespace>socket_是否连接</RootNamespace>
+    <AssemblyName>socket 是否连接</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,9 +30,6 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup>
-    <ApplicationIcon>exe.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -76,9 +73,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="exe.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
