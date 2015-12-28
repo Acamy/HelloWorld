@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // 有关程序集的常规信息通过以下
 // 特性集控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("JoyChat")]
-[assembly: AssemblyDescription("1.0")]
+[assembly: AssemblyTitle("GDI汇图")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("1225.client")]
+[assembly: AssemblyProduct("GDI汇图")]
 [assembly: AssemblyCopyright("Copyright © Microsoft 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
-[assembly: Guid("47c39d13-9cb3-46fb-8646-34f668252424")]
+[assembly: Guid("ce406713-8d22-46b2-8b0e-ad6f022689a8")]
 
 // 程序集的版本信息由下面四个值组成: 
 //

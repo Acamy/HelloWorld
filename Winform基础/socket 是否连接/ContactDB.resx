@@ -117,4 +117,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="SqlTest1_TestAction.SqlScript" xml:space="preserve">
+    <value>/*
+在此处添加 SQL 语句以便演练您要测试的
+数据库对象。
+
+若要测试某一存储过程，请通过添加具有相应
+参数的 EXEC 语句在此处调用该存储过程。
+
+在下部窗格中，您可以添加
+用来验证您的 SQL 语句的运行结果是否与预期相符的
+测试条件。
+*/</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>
