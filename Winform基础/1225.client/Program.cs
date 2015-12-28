@@ -15,7 +15,16 @@ namespace _1225.client
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Form1 f1 = new Form1();
+            f1.Show();
+            
+            Application.Run(f1);
+            //HideOnStartupApplicationContext context = new HideOnStartupApplicationContext();
+            //Application.Run();
+            //f1.WindowState = FormWindowState.Minimized;
+            
+            //f1.Hide();
+            
         }
     }
 }

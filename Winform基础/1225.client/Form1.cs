@@ -18,6 +18,7 @@ namespace _1225.client
     {
         public Form1()
         {
+            
             InitializeComponent();            
         }
         protected override void OnClosing(CancelEventArgs e)
@@ -65,12 +66,14 @@ namespace _1225.client
                     //表示发送的是文字消息
                     if (buffer[0] == 0)
                     {
+                        this.Visible = true;
                         string s = Encoding.UTF8.GetString(buffer, 1, r - 1);
                         ShowMsg(txtInfo .Text +" "+DateTime.Now.ToString()+ ":\r\n  " + s);
                     }
                     //表示发送的是文件
                     else if (buffer[0] == 1)
                     {
+                        this.Visible = true;
                         SaveFileDialog sfd = new SaveFileDialog();
                         sfd.InitialDirectory = @"E:\";
                         sfd.Title = "请选择要保存的文件";
@@ -99,13 +102,16 @@ namespace _1225.client
         }
         void ZD()
         {
+            this.Visible = true;
             for (int i = 0; i < 500; i++)
             {
-                this.Visible = true;
+                
                 this.Location = new Point(this.Location.X - 3, this.Location.Y - 3);
                 this.Location = new Point(this.Location.X + 6, this.Location.Y + 6);
                 this.Location = new Point(this.Location.X - 3, this.Location.Y - 3);
+                
             }
+            
         }
         void ShowMsg(string str)
         {
@@ -134,7 +140,8 @@ namespace _1225.client
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            //this.Visible = false;
+            notifyIcon1.Visible = false;
 
             string fileName = Application.ExecutablePath;
 
@@ -165,6 +172,7 @@ namespace _1225.client
             Control.CheckForIllegalCrossThreadCalls = false;
             textMsg.Select();
             Connect();
+            this.WindowState = FormWindowState.Minimized;
         }
 
         private void Connect()

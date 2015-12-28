@@ -322,9 +322,18 @@ namespace Server
         /// <param name="e"></param>
         private void button5_Click(object sender, EventArgs e)
         {
-            byte[] buffer = new byte[1];
-            buffer[0] = 2;
-            dicSocket[cboUser.SelectedItem.ToString()].Send(buffer);
+            try
+            {
+                byte[] buffer = new byte[1];
+                buffer[0] = 2;
+                dicSocket[cboUser.SelectedItem.ToString()].Send(buffer);
+            }
+            catch 
+            {
+
+                MessageBox.Show("erro");
+            }
+            
         }
 
         private void txtMessage_KeyDown(object sender, KeyEventArgs e)
