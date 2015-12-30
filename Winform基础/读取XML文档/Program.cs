@@ -29,6 +29,7 @@ namespace 读取XML文档
                  Console.WriteLine(item.Attributes["Name"].Value);
                  Console.WriteLine(item.Attributes["Count"].Value);
             }
+            Console.WriteLine("add");
 
             //删除节点
             //单个
